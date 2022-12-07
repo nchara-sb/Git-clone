@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:testCase id="c63b4bc1-389b-4c9d-b5fe-5e9db040b363" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="Integration Test" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+<con:testCase id="9aea38ea-26ff-4586-b20f-96f2449a2513" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="Integration Test" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
   <con:description>Integration tests are supposed to show how APIs work in a real world scenarios, integrating APIs together as a user would use an application in a workflow. In the following example we Login, Search for an Item, Buy the Item and then logout. We have strung these steps together
 with some of the tools easy to use feature (GET DATA: See Documentation) which allows you to easily pass values from a response to the next request.
 
@@ -13,10 +13,10 @@ Fifth Step turns off the virtual REST Service
 NOTE: If you would like to run the Login step without as a standalone step please turn on the virtual service under the ReadyAPI Virtualization Tool</con:description>
   <con:settings>
     <con:setting id="144505c6-b03d-43d1-8f24-71eb41db11e3fileName">Integration-Test</con:setting>
-    <con:setting id="c63b4bc1-389b-4c9d-b5fe-5e9db040b363fileName">Integration-Test</con:setting>
+    <con:setting id="9aea38ea-26ff-4586-b20f-96f2449a2513fileName">Integration-Test</con:setting>
   </con:settings>
   <con:savedRecentRuns>1</con:savedRecentRuns>
-  <con:testStep type="VirtRunnerTestStep" name="Start Service" id="7e95574c-a5ac-473f-8300-66e7ffa38df9">
+  <con:testStep type="VirtRunnerTestStep" name="Start Service" id="64b3e32c-6a3d-4feb-b770-1514f35f8d64">
     <con:settings/>
     <con:config>
       <url>localhost</url>
@@ -24,7 +24,7 @@ NOTE: If you would like to run the Login step without as a standalone step pleas
       <action>run</action>
     </con:config>
   </con:testStep>
-  <con:testStep type="restrequest" name="Login" id="7258c079-581a-4676-922a-53e71b16fca4">
+  <con:testStep type="restrequest" name="Login" id="e392a115-ee84-40c2-97ad-22e1b09634b4">
     <con:settings/>
     <con:config service="Ecommerce" resourcePath="/login/" methodName="Login" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
       <con:restRequest name="Login" id="af9f46ad-d5ad-4c3c-bcde-e2f266c3dc2c" mediaType="application/json" postQueryString="false">
@@ -89,7 +89,7 @@ NOTE: If you would like to run the Login step without as a standalone step pleas
       </con:restRequest>
     </con:config>
   </con:testStep>
-  <con:testStep type="restrequest" name="Search_Item" id="d6387f28-baad-410e-86e3-7d356c45a7a4">
+  <con:testStep type="restrequest" name="Search_Item" id="8666c0eb-b138-45b5-9efc-073548a2a9b6">
     <con:settings/>
     <con:config service="Ecommerce" resourcePath="/search" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
       <con:restRequest name="Search_Item" id="21ae0292-5321-42ce-b85e-257fe3d8c656" mediaType="application/json">
@@ -150,7 +150,7 @@ NOTE: If you would like to run the Login step without as a standalone step pleas
       </con:restRequest>
     </con:config>
   </con:testStep>
-  <con:testStep type="restrequest" name="Buy_Item" id="3121d827-1ab8-4b53-a86b-b3143fbcdb52">
+  <con:testStep type="restrequest" name="Buy_Item" id="2ce760ef-9e15-4266-bbb3-58f0aa326a3a">
     <con:settings/>
     <con:config service="Ecommerce" resourcePath="/buy" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
       <con:restRequest name="Buy_Item" id="b797c37e-2328-43f9-b0d6-f1d993c8419f" mediaType="application/json" postQueryString="false">
@@ -211,7 +211,7 @@ NOTE: If you would like to run the Login step without as a standalone step pleas
       </con:restRequest>
     </con:config>
   </con:testStep>
-  <con:testStep type="restrequest" name="Logout" id="5cf17090-caf7-46ce-9a5a-38dba7cca932">
+  <con:testStep type="restrequest" name="Logout" id="ad4f0205-c32c-47c2-be50-a622e7eb69f5">
     <con:settings/>
     <con:config service="Ecommerce" resourcePath="/logout" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
       <con:restRequest name="Logout" id="05080aa5-8817-44ff-ad88-cf8aec040aef" mediaType="application/json">
@@ -273,7 +273,7 @@ NOTE: If you would like to run the Login step without as a standalone step pleas
       </con:restRequest>
     </con:config>
   </con:testStep>
-  <con:testStep type="VirtRunnerTestStep" name="Stop Service" id="5576349b-e4ef-4afc-9ca4-89874339cb65">
+  <con:testStep type="VirtRunnerTestStep" name="Stop Service" id="57e1baae-5da4-46dd-a267-d8fa00acf31a">
     <con:settings/>
     <con:config>
       <url>localhost</url>
