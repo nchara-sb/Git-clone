@@ -2,9 +2,9 @@ Ecommerce\Login.xml
 Ecommerce\buy.xml
 Ecommerce\logout.xml
 Ecommerce\search.xml
-Sample-REST-Test-Suite\Simple-Login-Call.xml
-Sample-REST-Test-Suite\Integration-Test.xml
-Sample-REST-Test-Suite\DataDriven-REST-Test.xml
+Git-Clone\Simple-Login-Call.xml
+Git-Clone\Integration-Test.xml
+Git-Clone\DataDriven-REST-Test.xml
 EcommerceVirt\%2Ftest.xml
 EcommerceVirt\buy.xml
 EcommerceVirt\login.xml
